@@ -1,12 +1,14 @@
 {
   "name": "ytsearch-cli-site",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.2.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && node scripts/prerender.mjs",
+    "preview": "vite preview",
+    "check:build": "npm run build",
+    "verify:seo": "node scripts/verify-seo.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

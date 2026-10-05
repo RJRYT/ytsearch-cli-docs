@@ -1,0 +1,266 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ytsearch-cli.rjryt.com/spec/v1.2.3.json",
+  "schemaVersion": "1.0.0",
+  "product": {
+    "name": "ytsearch-cli",
+    "displayName": "YTSearch CLI",
+    "version": "1.2.3",
+    "description": "A beautiful command-line interface for YouTube search, powered by ytsearch.js.",
+    "website": "https://ytsearch-cli.rjryt.com",
+    "repository": "https://github.com/RJRYT/ytsearch-cli",
+    "npm": "https://www.npmjs.com/package/ytsearch-cli",
+    "license": "MIT",
+    "node": ">=14.0.0",
+    "binary": "ytsearch",
+    "coreDependency": "ytsearch.js@^2.1.3"
+  },
+  "globalOptions": {
+    "limit": {
+      "flags": ["-l", "--limit"],
+      "value": "<number>",
+      "type": "number",
+      "default": 10,
+      "description": "Limit number of results"
+    },
+    "sort": {
+      "flags": ["-s", "--sort"],
+      "value": "<type>",
+      "type": "enum",
+      "values": ["relevance", "upload_date", "view_count", "rating"],
+      "default": "relevance",
+      "description": "Sort search results"
+    },
+    "mode": {
+      "flags": ["-m", "--mode"],
+      "value": "<type>",
+      "type": "enum",
+      "values": ["default", "compact", "online", "detailed"],
+      "default": "default",
+      "description": "Display mode for formatted output"
+    },
+    "json": {
+      "flags": ["-j", "--json"],
+      "type": "boolean",
+      "default": false,
+      "description": "Output raw JSON instead of formatted display"
+    },
+    "watch": {
+      "flags": ["-w", "--watch"],
+      "type": "boolean",
+      "default": false,
+      "description": "Start interactive watch mode"
+    }
+  },
+  "commands": {
+    "search": {
+      "usage": "ytsearch search <query>",
+      "description": "Search across all YouTube content types",
+      "searchType": "any",
+      "query": { "name": "query", "required": true, "type": "string" },
+      "supports": ["limit", "sort", "mode", "json"]
+    },
+    "video": {
+      "usage": "ytsearch video <query>",
+      "description": "Search for YouTube videos",
+      "searchType": "video",
+      "query": { "name": "query", "required": true, "type": "string" },
+      "supports": ["limit", "sort", "mode", "json"]
+    },
+    "channel": {
+      "usage": "ytsearch channel <query>",
+      "description": "Search for YouTube channels",
+      "searchType": "channel",
+      "query": { "name": "query", "required": true, "type": "string" },
+      "supports": ["limit", "sort", "mode", "json"]
+    },
+    "playlist": {
+      "usage": "ytsearch playlist <query>",
+      "description": "Search for YouTube playlists",
+      "searchType": "playlist",
+      "query": { "name": "query", "required": true, "type": "string" },
+      "supports": ["limit", "sort", "mode", "json"]
+    },
+    "movie": {
+      "usage": "ytsearch movie <query>",
+      "description": "Search for YouTube movies",
+      "searchType": "movie",
+      "query": { "name": "query", "required": true, "type": "string" },
+      "supports": ["limit", "sort", "mode", "json"]
+    },
+    "live": {
+      "usage": "ytsearch live <query>",
+      "description": "Search for YouTube livestreams",
+      "searchType": "live",
+      "query": { "name": "query", "required": true, "type": "string" },
+      "supports": ["limit", "sort", "mode", "json"]
+    },
+    "details": {
+      "usage": "ytsearch details <videoId>",
+      "description": "Get detailed information about a specific video",
+      "argument": {
+        "name": "videoId",
+        "required": true,
+        "type": "string",
+        "format": "YouTube video ID"
+      },
+      "supports": ["json"],
+      "formattedModes": ["default"],
+      "interactiveModes": ["default", "detailed", "json"]
+    },
+    "playlist-videos": {
+      "usage": "ytsearch playlist-videos <playlistId>",
+      "description": "Get videos from a playlist with pagination",
+      "argument": {
+        "name": "playlistId",
+        "required": true,
+        "type": "string",
+        "format": "YouTube playlist ID"
+      },
+      "supports": ["limit", "json"],
+      "defaultLimit": 50
+    }
+  },
+  "displayModes": {
+    "default": "Rich formatted tables with information",
+    "compact": "Minimal quick-view output",
+    "online": "URL/link-oriented output",
+    "detailed": "Extended metadata output"
+  },
+  "searchBehavior": {
+    "spinner": "Searching YouTube...",
+    "pagination": true,
+    "paginationPrompt": "Load next page?",
+    "pageMethod": "SearchResult.nextPage()",
+    "noResultsMessage": "No results found.",
+    "json": "JSON.stringify(results, null, 2)",
+    "resultGroups": ["channels", "playlists", "videos", "movies", "lives"]
+  },
+  "playlistBehavior": {
+    "spinner": "Fetching playlist...",
+    "pagination": true,
+    "paginationPrompt": "Load next page?",
+    "pageMethod": "PlaylistPage.nextPage()",
+    "defaultLimit": 50,
+    "json": "JSON.stringify(playlistPage, null, 2)",
+    "playlistInfo": [
+      "title",
+      "author",
+      "videoCount",
+      "viewsCount",
+      "expectedPages",
+      "description"
+    ],
+    "videoColumns": ["index", "title", "duration", "views"]
+  },
+  "interactive": {
+    "entry": ["ytsearch --watch", "ytsearch -w"],
+    "mainMenu": [
+      "video",
+      "channel",
+      "playlist",
+      "movie",
+      "live",
+      "details",
+      "playlist-videos",
+      "any",
+      "settings",
+      "exit"
+    ],
+    "searchSettings": {
+      "modeValues": ["default", "compact", "online", "detailed", "json"],
+      "limit": { "minimum": 10, "maximum": 50, "default": 10 },
+      "sortValues": ["relevance", "upload_date", "view_count", "rating"]
+    },
+    "videoDetailsInput": "YouTube video ID or URL",
+    "playlistInput": "YouTube playlist ID or URL",
+    "continuesAfterAction": true,
+    "ctrlCExit": true
+  },
+  "videoDetailsOutput": {
+    "fields": [
+      "title",
+      "channel",
+      "subscribers",
+      "duration",
+      "views",
+      "likes",
+      "uploadDate",
+      "category",
+      "allowRatings",
+      "url",
+      "description"
+    ],
+    "stateIndicators": ["LIVE", "PRIVATE", "UNLISTED"],
+    "channelIndicators": ["verified", "artist"]
+  },
+  "errors": {
+    "knownErrorType": "YtSearchError",
+    "knownErrorFormat": "<code>: <message>",
+    "invalidVideoCode": "INVALID_VIDEO",
+    "invalidPlaylistCode": "INVALID_PLAYLIST",
+    "invalidVideoHint": "Please provide a valid YouTube video ID (e.g., dQw4w9WgXcQ)",
+    "invalidPlaylistHint": "Please provide a valid YouTube playlist ID (e.g., PL4QNnZJr8sRPEJPqe7jZnsLPTBu1E3nIY)",
+    "unexpectedFormat": "Unexpected error: <message>"
+  },
+  "publicLibraryExports": {
+    "note": "The package exposes library functions in addition to its CLI binary. Website positioning should remain CLI-first.",
+    "types": ["DisplayMode", "GlobalOptions", "SearchCommandOptions"],
+    "functions": ["searchCommand", "detailsCommand", "playlistCommand"],
+    "formatter": [
+      "Formatter.createHeader",
+      "Formatter.createBrand",
+      "Formatter.formatVideo",
+      "Formatter.formatChannel",
+      "Formatter.formatPlaylist",
+      "Formatter.formatResults",
+      "Formatter.formatVideoByMode",
+      "Formatter.formatChannelByMode",
+      "Formatter.formatPlaylistByMode",
+      "Formatter.formatCompactResults",
+      "Formatter.formatOnlineResults",
+      "Formatter.formatError",
+      "Formatter.formatSuccess",
+      "Formatter.formatWarning",
+      "Formatter.formatVideoDetailed",
+      "Formatter.formatChannelDetailed",
+      "Formatter.formatPlaylistDetailed"
+    ]
+  },
+  "documentation": {
+    "canonicalDomain": "https://ytsearch-cli.rjryt.com",
+    "versionedDocs": true,
+    "recommendedRoutes": [
+      "/",
+      "/docs",
+      "/docs/installation",
+      "/docs/quick-start",
+      "/docs/commands/search",
+      "/docs/commands/video",
+      "/docs/commands/channel",
+      "/docs/commands/playlist",
+      "/docs/commands/movie",
+      "/docs/commands/live",
+      "/docs/commands/details",
+      "/docs/commands/playlist-videos",
+      "/docs/options",
+      "/docs/display-modes",
+      "/docs/json",
+      "/docs/interactive-mode",
+      "/docs/pagination",
+      "/docs/errors",
+      "/docs/compatibility",
+      "/guides",
+      "/changelog",
+      "/faq"
+    ]
+  },
+  "auditNotes": [
+    "Normal CLI global --mode accepts default, compact, online, detailed; interactive search additionally offers json as a mode choice.",
+    "Normal search accepts global --limit without CLI-side min/max validation; the underlying ytsearch.js implementation may normalize limits.",
+    "Interactive search explicitly validates limit between 10 and 50.",
+    "playlist-videos uses a command-specific default limit of 50.",
+    "--watch is detected before Commander parsing, so interactive mode should be documented as a dedicated entry path rather than combined with normal command execution.",
+    "The CLI package is CommonJS output even though the underlying ytsearch.js ecosystem is modernized separately; do not infer ESM behavior for this package without testing a future build."
+  ]
+}

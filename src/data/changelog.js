@@ -1,0 +1,87 @@
+export const changelog = [
+  [
+    "1.2.3",
+    "September 23, 2026",
+    "chore",
+    "Bump version to 1.2.3 and update ytsearch.js dependency to 2.1.3.",
+  ],
+  [
+    "1.2.3",
+    "September 22, 2026",
+    "docs",
+    "Updated the package description and expanded the README with a detailed project description and related ytsearch.js section.",
+  ],
+  [
+    "1.2.2",
+    "September 15, 2026",
+    "chore",
+    "Bump version to 1.2.2 and update ytsearch.js dependency to 2.1.2; improve README descriptions and features.",
+  ],
+  [
+    "1.2.1",
+    "September 14, 2026",
+    "chore",
+    "Bump version to 1.2.1 and update ytsearch.js dependency to 2.1.1.",
+  ],
+  [
+    "1.2.0",
+    "September 29, 2025",
+    "feat",
+    "Add movie and live search commands to the CLI.",
+  ],
+  [
+    "1.2.0",
+    "September 29, 2025",
+    "fix",
+    "Update the watch URL reference in the details command.",
+  ],
+  [
+    "1.2.0",
+    "September 29, 2025",
+    "refactor",
+    "Improve playlist handling for optional limits and author checks.",
+  ],
+  [
+    "1.2.0",
+    "September 29, 2025",
+    "refactor",
+    "Update search command to support pagination and prompts for loading more results.",
+  ],
+  [
+    "1.2.0",
+    "September 29, 2025",
+    "refactor",
+    "Update types to use SearchType for better type safety and sync ytsearch.js to v2.1.0.",
+  ],
+  [
+    "1.1.0",
+    "September 21, 2025",
+    "feat",
+    "Add multiple display modes and interactive watch mode.",
+  ],
+  [
+    "1.1.0",
+    "September 21, 2025",
+    "feat",
+    "Add interactive mode and improve search result display options.",
+  ],
+  [
+    "1.1.0",
+    "September 21, 2025",
+    "docs",
+    "Update README and adjust interactive flow so configuration returns without an unnecessary continue prompt.",
+  ],
+  [
+    "1.0.0",
+    "September 20, 2025",
+    "feat",
+    "Add core search and detail functionalities for the YouTube CLI.",
+  ],
+  [
+    "1.0.0",
+    "September 20, 2025",
+    "chore",
+    "Set up project structure and configurations for a CLI tool.",
+  ],
+  ["1.0.0", "September 20, 2025", "init", "Initial commit."],
+];
