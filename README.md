@@ -1,30 +1,216 @@
-# YTSearch CLI website
+# ytsearch-cli Documentation
 
-React + Vite documentation site for `ytsearch-cli`, prerendered to static HTML for GitHub Pages.
+Official documentation website for **[ytsearch-cli](https://github.com/RJRYT/ytsearch-cli)** — a command-line interface for searching YouTube directly from your terminal.
 
-## Architecture
+🌐 **Documentation:** [ytsearch-cli.rjryt.com](https://ytsearch-cli.rjryt.com)  
+📦 **npm:** [npmjs.com/package/ytsearch-cli](https://www.npmjs.com/package/ytsearch-cli)  
+💻 **CLI Repository:** [github.com/RJRYT/ytsearch-cli](https://github.com/RJRYT/ytsearch-cli)  
+🔎 **ytsearch.js:** [ytsearch.rjryt.com](https://ytsearch.rjryt.com)
 
-- Componentized React UI under `src/components/` and `src/pages/`
-- Route/content metadata in `src/data/routes.js`
-- CLI contract mirrored from `public/spec/v1.2.3.json`
-- Build-time React SSR/prerender in `scripts/prerender.mjs`
-- Build-time sitemap and robots generation
-- Static `404.html` for GitHub Pages
-- Per-route title, description, canonical, robots, Open Graph, Twitter and JSON-LD metadata
-- SEO artifact verification with `npm run verify:seo`
+---
 
-## Development
+## About
+
+**ytsearch-cli** makes it easy to search and explore YouTube from the command line.
+
+The documentation provides everything needed to install and use the CLI, including command references, options, output modes, interactive mode, JSON output, pagination, error handling, compatibility information, guides, and frequently asked questions.
+
+The current documentation covers **ytsearch-cli v1.2.3**.
+
+---
+
+## What's documented
+
+The documentation covers the complete CLI experience:
+
+- Installation and setup
+- Quick start
+- YouTube search
+- Video search
+- Channel search
+- Playlist search
+- Movie search
+- Live stream search
+- Video details
+- Playlist videos
+- Search options
+- Display modes
+- JSON output
+- Interactive mode
+- Pagination
+- Error handling
+- Node.js compatibility
+- Guides
+- Changelog
+- Frequently asked questions
+
+---
+
+## Quick Example
+
+Install the CLI globally:
 
 ```bash
-npm install
-npm run dev
+npm install -g ytsearch-cli
 ```
 
-## Production build
+Search YouTube:
 
 ```bash
-npm run build
-npm run verify:seo
+ytsearch search "javascript tutorial"
 ```
 
-The final `dist/` directory contains one HTML entry point per documentation route, `sitemap.xml`, `robots.txt`, `404.html`, and the bundled assets.
+Search only videos:
+
+```bash
+ytsearch video "node.js tutorial"
+```
+
+Search channels:
+
+```bash
+ytsearch channel "freecodecamp"
+```
+
+Get information about a video:
+
+```bash
+ytsearch details dQw4w9WgXcQ
+```
+
+Start interactive mode:
+
+```bash
+ytsearch --watch
+```
+
+The documentation contains more examples and explains the available options for each command.
+
+---
+
+## Documentation
+
+Visit the official documentation:
+
+**[ytsearch-cli.rjryt.com](https://ytsearch-cli.rjryt.com)**
+
+### Getting Started
+
+- [Introduction](https://ytsearch-cli.rjryt.com/docs)
+- [Installation](https://ytsearch-cli.rjryt.com/docs/installation)
+- [Quick Start](https://ytsearch-cli.rjryt.com/docs/quick-start)
+
+### Commands
+
+- [Search](https://ytsearch-cli.rjryt.com/docs/commands/search)
+- [Video](https://ytsearch-cli.rjryt.com/docs/commands/video)
+- [Channel](https://ytsearch-cli.rjryt.com/docs/commands/channel)
+- [Playlist](https://ytsearch-cli.rjryt.com/docs/commands/playlist)
+- [Movie](https://ytsearch-cli.rjryt.com/docs/commands/movie)
+- [Live](https://ytsearch-cli.rjryt.com/docs/commands/live)
+- [Details](https://ytsearch-cli.rjryt.com/docs/commands/details)
+- [Playlist Videos](https://ytsearch-cli.rjryt.com/docs/commands/playlist-videos)
+
+### Features
+
+- [Options](https://ytsearch-cli.rjryt.com/docs/options)
+- [Display Modes](https://ytsearch-cli.rjryt.com/docs/display-modes)
+- [JSON Output](https://ytsearch-cli.rjryt.com/docs/json)
+- [Interactive Mode](https://ytsearch-cli.rjryt.com/docs/interactive-mode)
+- [Pagination](https://ytsearch-cli.rjryt.com/docs/pagination)
+- [Errors](https://ytsearch-cli.rjryt.com/docs/errors)
+- [Compatibility](https://ytsearch-cli.rjryt.com/docs/compatibility)
+
+### More
+
+- [Guides](https://ytsearch-cli.rjryt.com/guides)
+- [Changelog](https://ytsearch-cli.rjryt.com/changelog)
+- [FAQ](https://ytsearch-cli.rjryt.com/faq)
+
+---
+
+## About ytsearch-cli
+
+ytsearch-cli is powered by **[ytsearch.js](https://github.com/RJRYT/ytsearch.js)** and provides a convenient terminal interface for working with YouTube search results.
+
+It supports:
+
+- 🎬 Videos
+- 📺 Channels
+- 📋 Playlists
+- 🎞️ Movies
+- 🔴 Live streams
+- 📊 Video details
+- 📑 Playlist videos
+- 🔄 Paginated results
+- 🖥️ Interactive terminal mode
+- 📦 JSON output
+
+For the underlying Node.js library, visit **[ytsearch.js](https://ytsearch.rjryt.com)**.
+
+---
+
+## Version
+
+The documentation currently follows:
+
+**ytsearch-cli v1.2.3**
+
+Supported Node.js version:
+
+**Node.js 14 or newer**
+
+For version-specific changes, see the [changelog](https://ytsearch-cli.rjryt.com/changelog).
+
+---
+
+## Related Projects
+
+### ytsearch-cli
+
+The command-line interface for YouTube search.
+
+[GitHub](https://github.com/RJRYT/ytsearch-cli) · [npm](https://www.npmjs.com/package/ytsearch-cli) · [Documentation](https://ytsearch-cli.rjryt.com)
+
+### ytsearch.js
+
+The Node.js library powering the CLI.
+
+[GitHub](https://github.com/RJRYT/ytsearch.js) · [Documentation](https://ytsearch.rjryt.com)
+
+### RJRYT
+
+More projects and work by the author.
+
+[Portfolio](https://rjryt.com) · [GitHub](https://github.com/RJRYT)
+
+---
+
+## Contributing
+
+Found something missing or incorrect in the documentation?
+
+Contributions are welcome.
+
+You can:
+
+1. Open an issue for documentation problems or suggestions.
+2. Submit a pull request with improvements.
+3. Report examples that no longer match the current CLI behavior.
+
+When contributing documentation, please make sure examples and command descriptions match the supported version of `ytsearch-cli`.
+
+---
+
+## License
+
+The `ytsearch-cli` package is released under the **MIT License**.
+
+See the [ytsearch-cli repository](https://github.com/RJRYT/ytsearch-cli) for the package source and license information.
+
+---
+
+<p align="center">
+  <strong>ytsearch-cli</strong><br>
+  YouTube search from your terminal.
+</p>
