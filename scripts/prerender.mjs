@@ -55,9 +55,7 @@ function html(route, markup) {
     .replace('<html lang="en">', '<html lang="en">')
     .replace(
       /<head>[\s\S]*?<\/head>/,
-      `<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#0b0d12"/><meta name="color-scheme" content="dark light"/><meta name="generator" content="YTSearch CLI documentation"/><title>${escapeHtml(
-        route.title
-      )}</title>${head(route)}${
+      `<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#0b0d12"/><meta name="color-scheme" content="dark light"/><meta name="generator" content="YTSearch CLI documentation"/>    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="manifest" href="/site.webmanifest" /><title>${escapeHtml(route.title)}</title>${head(route)}${
         stylesheet
           ? `<link rel="stylesheet" crossorigin href="${stylesheet}"/>`
           : ""
