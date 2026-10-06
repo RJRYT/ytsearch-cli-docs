@@ -2,7 +2,7 @@ export const SITE = {
   name: "YTSearch CLI",
   packageName: "ytsearch-cli",
   version: "1.2.3",
-  domain: "https://ytsearch-cli.rjryt.com",
+  domain: "https://ytsearchcli.rjryt.com",
   description:
     "A command-line interface for searching YouTube videos, channels, playlists, movies, and live streams with ytsearch.js.",
   repository: "https://github.com/RJRYT/ytsearch-cli",

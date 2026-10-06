@@ -1,13 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ytsearch-cli.rjryt.com/spec/v1.2.3.json",
+  "$id": "https://ytsearchcli.rjryt.com/spec/v1.2.3.json",
   "schemaVersion": "1.0.0",
   "product": {
     "name": "ytsearch-cli",
     "displayName": "YTSearch CLI",
     "version": "1.2.3",
     "description": "A beautiful command-line interface for YouTube search, powered by ytsearch.js.",
-    "website": "https://ytsearch-cli.rjryt.com",
+    "website": "https://ytsearchcli.rjryt.com",
     "repository": "https://github.com/RJRYT/ytsearch-cli",
     "npm": "https://www.npmjs.com/package/ytsearch-cli",
     "license": "MIT",
@@ -228,7 +228,7 @@
     ]
   },
   "documentation": {
-    "canonicalDomain": "https://ytsearch-cli.rjryt.com",
+    "canonicalDomain": "https://ytsearchcli.rjryt.com",
     "versionedDocs": true,
     "recommendedRoutes": [
       "/",

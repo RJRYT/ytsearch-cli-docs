@@ -1,5 +1,5 @@
 export function absoluteUrl(path) {
-  const base = "https://ytsearch-cli.rjryt.com";
+  const base = "https://ytsearchcli.rjryt.com";
   return `${base}${path === "/" ? "/" : path.replace(/\/+$/, "") + "/"}`;
 }
 

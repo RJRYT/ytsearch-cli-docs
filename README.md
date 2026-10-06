@@ -2,7 +2,7 @@
 
 Official documentation website for **[ytsearch-cli](https://github.com/RJRYT/ytsearch-cli)** — a command-line interface for searching YouTube directly from your terminal.
 
-🌐 **Documentation:** [ytsearch-cli.rjryt.com](https://ytsearch-cli.rjryt.com)  
+🌐 **Documentation:** [ytsearchcli.rjryt.com](https://ytsearchcli.rjryt.com)  
 📦 **npm:** [npmjs.com/package/ytsearch-cli](https://www.npmjs.com/package/ytsearch-cli)  
 💻 **CLI Repository:** [github.com/RJRYT/ytsearch-cli](https://github.com/RJRYT/ytsearch-cli)  
 🔎 **ytsearch.js:** [ytsearch.rjryt.com](https://ytsearch.rjryt.com)
@@ -92,40 +92,40 @@ The documentation contains more examples and explains the available options for 
 
 Visit the official documentation:
 
-**[ytsearch-cli.rjryt.com](https://ytsearch-cli.rjryt.com)**
+**[ytsearchcli.rjryt.com](https://ytsearchcli.rjryt.com)**
 
 ### Getting Started
 
-- [Introduction](https://ytsearch-cli.rjryt.com/docs)
-- [Installation](https://ytsearch-cli.rjryt.com/docs/installation)
-- [Quick Start](https://ytsearch-cli.rjryt.com/docs/quick-start)
+- [Introduction](https://ytsearchcli.rjryt.com/docs)
+- [Installation](https://ytsearchcli.rjryt.com/docs/installation)
+- [Quick Start](https://ytsearchcli.rjryt.com/docs/quick-start)
 
 ### Commands
 
-- [Search](https://ytsearch-cli.rjryt.com/docs/commands/search)
-- [Video](https://ytsearch-cli.rjryt.com/docs/commands/video)
-- [Channel](https://ytsearch-cli.rjryt.com/docs/commands/channel)
-- [Playlist](https://ytsearch-cli.rjryt.com/docs/commands/playlist)
-- [Movie](https://ytsearch-cli.rjryt.com/docs/commands/movie)
-- [Live](https://ytsearch-cli.rjryt.com/docs/commands/live)
-- [Details](https://ytsearch-cli.rjryt.com/docs/commands/details)
-- [Playlist Videos](https://ytsearch-cli.rjryt.com/docs/commands/playlist-videos)
+- [Search](https://ytsearchcli.rjryt.com/docs/commands/search)
+- [Video](https://ytsearchcli.rjryt.com/docs/commands/video)
+- [Channel](https://ytsearchcli.rjryt.com/docs/commands/channel)
+- [Playlist](https://ytsearchcli.rjryt.com/docs/commands/playlist)
+- [Movie](https://ytsearchcli.rjryt.com/docs/commands/movie)
+- [Live](https://ytsearchcli.rjryt.com/docs/commands/live)
+- [Details](https://ytsearchcli.rjryt.com/docs/commands/details)
+- [Playlist Videos](https://ytsearchcli.rjryt.com/docs/commands/playlist-videos)
 
 ### Features
 
-- [Options](https://ytsearch-cli.rjryt.com/docs/options)
-- [Display Modes](https://ytsearch-cli.rjryt.com/docs/display-modes)
-- [JSON Output](https://ytsearch-cli.rjryt.com/docs/json)
-- [Interactive Mode](https://ytsearch-cli.rjryt.com/docs/interactive-mode)
-- [Pagination](https://ytsearch-cli.rjryt.com/docs/pagination)
-- [Errors](https://ytsearch-cli.rjryt.com/docs/errors)
-- [Compatibility](https://ytsearch-cli.rjryt.com/docs/compatibility)
+- [Options](https://ytsearchcli.rjryt.com/docs/options)
+- [Display Modes](https://ytsearchcli.rjryt.com/docs/display-modes)
+- [JSON Output](https://ytsearchcli.rjryt.com/docs/json)
+- [Interactive Mode](https://ytsearchcli.rjryt.com/docs/interactive-mode)
+- [Pagination](https://ytsearchcli.rjryt.com/docs/pagination)
+- [Errors](https://ytsearchcli.rjryt.com/docs/errors)
+- [Compatibility](https://ytsearchcli.rjryt.com/docs/compatibility)
 
 ### More
 
-- [Guides](https://ytsearch-cli.rjryt.com/guides)
-- [Changelog](https://ytsearch-cli.rjryt.com/changelog)
-- [FAQ](https://ytsearch-cli.rjryt.com/faq)
+- [Guides](https://ytsearchcli.rjryt.com/guides)
+- [Changelog](https://ytsearchcli.rjryt.com/changelog)
+- [FAQ](https://ytsearchcli.rjryt.com/faq)
 
 ---
 
@@ -160,7 +160,7 @@ Supported Node.js version:
 
 **Node.js 14 or newer**
 
-For version-specific changes, see the [changelog](https://ytsearch-cli.rjryt.com/changelog).
+For version-specific changes, see the [changelog](https://ytsearchcli.rjryt.com/changelog).
 
 ---
 
@@ -170,7 +170,7 @@ For version-specific changes, see the [changelog](https://ytsearch-cli.rjryt.com
 
 The command-line interface for YouTube search.
 
-[GitHub](https://github.com/RJRYT/ytsearch-cli) · [npm](https://www.npmjs.com/package/ytsearch-cli) · [Documentation](https://ytsearch-cli.rjryt.com)
+[GitHub](https://github.com/RJRYT/ytsearch-cli) · [npm](https://www.npmjs.com/package/ytsearch-cli) · [Documentation](https://ytsearchcli.rjryt.com)
 
 ### ytsearch.js
 
