@@ -59,15 +59,11 @@ function html(route, markup) {
         stylesheet
           ? `<link rel="stylesheet" crossorigin href="${stylesheet}"/>`
           : ""
-      }</head>`
+      }<script>${themeScript}</script><script type="module" crossorigin src="${script}"></script></head>`
     )
     .replace(
       '<div id="root"></div>',
       `<div id="root" data-ssr="true">${markup}</div>`
-    )
-    .replace(
-      /<script type="module" src="[^"]+"><\/script>/,
-      `<script>${themeScript}</script><script type="module" crossorigin src="${script}"></script>`
     );
 }
 
