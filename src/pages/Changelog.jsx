@@ -6,7 +6,7 @@ export default function Changelog() {
       <PageHero
         eyebrow="RELEASE HISTORY"
         title="YTSearch CLI changelog."
-        description="A repository-derived history of the CLI from the initial release through v1.2.3."
+        description="A repository-derived history of the CLI from the initial release through v1.2.4."
         crumbs={[{ label: "Changelog", to: "/changelog/" }]}
       />
       <div className="releaseList">

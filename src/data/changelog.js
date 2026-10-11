@@ -1,5 +1,11 @@
 export const changelog = [
   [
+    "1.2.4",
+    "October 11, 2026",
+    "fix",
+    "Improve JSON output handling by suppressing update notifications and branding",
+  ],
+  [
     "1.2.3",
     "September 23, 2026",
     "chore",
