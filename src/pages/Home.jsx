@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <section className="hero homeHero">
         <div className="eyebrow">
-          YTSEARCH CLI <span>v1.2.3</span>
+          YTSEARCH CLI <span>v1.2.4</span>
         </div>
         <h1>
           YouTube search,

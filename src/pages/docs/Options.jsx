@@ -6,7 +6,7 @@ export default function Options() {
       <PageHero
         eyebrow="OPTIONS"
         title="Control YTSearch CLI with global flags."
-        description="Reference the limit, sort, mode, JSON, and watch options supported by the v1.2.3 command-line interface."
+        description="Reference the limit, sort, mode, JSON, and watch options supported by the v1.2.4 command-line interface."
         crumbs={[
           { label: "Docs", to: "/docs/" },
           { label: "Options", to: "/docs/options/" },

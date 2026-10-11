@@ -1,7 +1,7 @@
 export const SITE = {
   name: "YTSearch CLI",
   packageName: "ytsearch-cli",
-  version: "1.2.3",
+  version: "1.2.4",
   domain: "https://ytsearchcli.rjryt.com",
   description:
     "A command-line interface for searching YouTube videos, channels, playlists, movies, and live streams with ytsearch.js.",
@@ -171,7 +171,7 @@ export const routes = [
     changefreq: "monthly",
     title: "YTSearch CLI Changelog — Release History",
     description:
-      "Release history for YTSearch CLI, including v1.2.3, v1.2.2, v1.2.1, v1.2.0, v1.1.0, and the initial release.",
+      "Release history for YTSearch CLI, including v1.2.4, v1.2.3, v1.2.2, v1.2.1, v1.2.0, v1.1.0, and the initial release.",
     type: "article",
   },
   {

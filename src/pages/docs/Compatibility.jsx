@@ -6,7 +6,7 @@ export default function Compatibility() {
       <PageHero
         eyebrow="COMPATIBILITY"
         title="Node.js and package compatibility."
-        description="YTSearch CLI v1.2.3 requires Node.js 14 or newer and ships as a CommonJS CLI package while using the modern ytsearch.js 2.1.3 dependency."
+        description="YTSearch CLI v1.2.4 requires Node.js 14 or newer and ships as a CommonJS CLI package while using the modern ytsearch.js 2.1.3 dependency."
         crumbs={[
           { label: "Docs", to: "/docs/" },
           { label: "Compatibility", to: "/docs/compatibility/" },
@@ -18,7 +18,7 @@ export default function Compatibility() {
       </p>
       <h2>Package relationship</h2>
       <p>
-        YTSearch CLI v1.2.3 depends on <code>ytsearch.js@^2.1.3</code>. The CLI
+        YTSearch CLI v1.2.4 depends on <code>ytsearch.js@^2.1.3</code>. The CLI
         is positioned as the terminal experience; the library remains the
         programmatic developer experience.
       </p>
@@ -29,7 +29,7 @@ export default function Compatibility() {
       </p>
       <h2>Current packaging</h2>
       <p>
-        The v1.2.3 CLI build is CommonJS output. Do not assume ESM package
+        The v1.2.4 CLI build is CommonJS output. Do not assume ESM package
         behavior merely because the underlying ytsearch.js ecosystem has
         modernized separately.
       </p>

@@ -15,7 +15,7 @@ Official documentation website for **[ytsearch-cli](https://github.com/RJRYT/yts
 
 The documentation provides everything needed to install and use the CLI, including command references, options, output modes, interactive mode, JSON output, pagination, error handling, compatibility information, guides, and frequently asked questions.
 
-The current documentation covers **ytsearch-cli v1.2.3**.
+The current documentation covers **ytsearch-cli v1.2.4**.
 
 ---
 
@@ -154,7 +154,7 @@ For the underlying Node.js library, visit **[ytsearch.js](https://ytsearch.rjryt
 
 The documentation currently follows:
 
-**ytsearch-cli v1.2.3**
+**ytsearch-cli v1.2.4**
 
 Supported Node.js version:
 

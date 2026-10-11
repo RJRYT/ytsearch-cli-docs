@@ -15,7 +15,7 @@ export default function Installation() {
       />
       <h2>Requirements</h2>
       <p>
-        YTSearch CLI v1.2.3 supports Node.js <code>&gt;=14.0.0</code>. The
+        YTSearch CLI v1.2.4 supports Node.js <code>&gt;=14.0.0</code>. The
         package installs the <code>ytsearch</code> binary.
       </p>
       <h2>Install globally</h2>

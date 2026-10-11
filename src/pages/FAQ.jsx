@@ -6,7 +6,7 @@ const items = [
   ],
   [
     "Which Node.js versions are supported?",
-    "YTSearch CLI v1.2.3 requires Node.js 14 or newer.",
+    "YTSearch CLI v1.2.4 requires Node.js 14 or newer.",
   ],
   [
     "Can I get JSON output?",
